@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 COPY ./index.html ./style.css ./License.txt ./css/ ./js/ ./images/ ./
 
 # Expose port 80 to access the site
-EXPOSE 80
+EXPOSE 5000
 
 # Nginx will automatically start when the container runs
 CMD ["nginx", "-g", "daemon off;"]
